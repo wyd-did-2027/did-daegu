@@ -1,0 +1,86 @@
+"use client";
+
+import { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+import { Section, SectionTitle } from "../ui/common-layout";
+import VideoCard from "@/components/ui/video-card";
+import type { YoutubeItem } from "@/lib/notion";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+interface YoutubeSectionProps {
+  items: YoutubeItem[];
+}
+
+export default function YoutubeSection({ items }: YoutubeSectionProps) {
+  const swiperRef = useRef<SwiperType | null>(null);
+  const [progress, setProgress] = useState(0);
+
+  return (
+    <Section
+      id="youtube"
+      className="min-h-auto"
+    >
+      <div className="flex justify-between items-center mb-8">
+        <SectionTitle className="mb-0">추천 영상</SectionTitle>
+        <div className="flex items-center gap-4">
+          <div className="w-60 h-0.5 bg-gray-300 hidden sm:block relative">
+            <div
+              className="absolute left-0 top-0 h-full bg-black transition-all duration-300"
+              style={{ width: `${progress * 100}%` }}
+            />
+          </div>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => swiperRef.current?.slidePrev()}
+              className="size-10 rounded-full border bg-black flex items-center justify-center cursor-pointer"
+              aria-label="이전"
+            >
+              <ChevronLeft className="size-5 text-white" />
+            </button>
+            <button
+              type="button"
+              onClick={() => swiperRef.current?.slideNext()}
+              className="size-10 rounded-full border bg-black flex items-center justify-center cursor-pointer"
+              aria-label="다음"
+            >
+              <ChevronRight className="size-5 text-white" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <Swiper
+        modules={[Navigation]}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        onProgress={(_, prog) => {
+          setProgress(prog);
+        }}
+        spaceBetween={16}
+        slidesPerView={1}
+        breakpoints={{
+          1280: { slidesPerView: 2 },
+        }}
+        className="[&_.swiper-slide]:h-auto!"
+      >
+        {items.map((video) => (
+          <SwiperSlide key={video.id}>
+            <VideoCard
+              videoId={video.videoId}
+              title={video.title}
+              date={video.date}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Section>
+  );
+}
