@@ -24,7 +24,6 @@ export default function YoutubeSection({ items }: YoutubeSectionProps) {
   return (
     <Section
       id="youtube"
-      style={{ backgroundImage: "url('/bg01.png')" }}
       className="bg-no-repeat bg-fixed bg-cover min-h-auto"
     >
       <div className="flex justify-between items-center mb-8">
