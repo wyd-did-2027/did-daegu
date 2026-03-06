@@ -24,7 +24,8 @@ export default function YoutubeSection({ items }: YoutubeSectionProps) {
   return (
     <Section
       id="youtube"
-      className="min-h-auto"
+      style={{ backgroundImage: "url('/bg01.png')" }}
+      className="bg-no-repeat bg-fixed bg-cover min-h-auto"
     >
       <div className="flex justify-between items-center mb-8">
         <SectionTitle className="mb-0">추천 영상</SectionTitle>
@@ -67,7 +68,7 @@ export default function YoutubeSection({ items }: YoutubeSectionProps) {
         spaceBetween={16}
         slidesPerView={1}
         breakpoints={{
-          1280: { slidesPerView: 2 },
+          1280: { slidesPerView: 3 },
         }}
         className="[&_.swiper-slide]:h-auto!"
       >

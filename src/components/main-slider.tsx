@@ -21,8 +21,6 @@ import "@egjs/flicking-plugins/dist/pagination.css";
 
 import SliderItem00 from "./slider-item/slider-item00";
 import SliderItem01 from "./slider-item/slider-item01";
-//import SliderItem02 from "./slider-item/slider-item02";
-//import SliderItem03 from "./slider-item/slider-item03";
 import SliderItem04 from "./slider-item/slider-item04";
 
 export default function MainSlider() {

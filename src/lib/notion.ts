@@ -151,7 +151,7 @@ function getFileUrl(
     external?: { url: string };
   }>
 ): string {
-  if (files.length === 0) return "/main01.jpg"; // 기본 이미지
+  if (files.length === 0) return ""; // 기본 이미지
   const file = files[0];
   if (file.type === "file" && file.file) {
     return file.file.url;
@@ -159,7 +159,7 @@ function getFileUrl(
   if (file.type === "external" && file.external) {
     return file.external.url;
   }
-  return "/main01.jpg";
+  return "";
 }
 
 export async function getNoticeData(): Promise<NoticeItem[]> {
@@ -200,7 +200,7 @@ export async function getNoticeData(): Promise<NoticeItem[]> {
               file?: { url: string };
               external?: { url: string };
             }>)
-          : "/main01.jpg";
+          : "";
 
       return {
         id: page.id,
@@ -248,7 +248,7 @@ export async function getNoticeById(id: string): Promise<NoticeDetail | null> {
               external?: { url: string };
             }>
           )
-        : "/main01.jpg";
+        : "";
 
     // 페이지 블록 내용 가져오기
     const blocks = await notion.blocks.children.list({
@@ -441,7 +441,7 @@ export async function getSiteData(): Promise<SiteItem[]> {
                 external?: { url: string };
               }>
             )
-          : "/main04.png";
+          : "";
 
       return {
         id: page.id,

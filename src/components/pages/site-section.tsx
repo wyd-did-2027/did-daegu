@@ -54,7 +54,7 @@ export default function SiteSection({ items }: SiteSectionProps) {
     <Section
       id="site"
       className="bg-no-repeat bg-center bg-cover relative bg-fixed min-h-auto"
-      style={{ backgroundImage: "url('/main03.jpeg')" }}
+      style={{ backgroundImage: "url('https://r2-image-server.masterforce999.workers.dev/section-main03.jpeg')" }}
     >
       <div className="flex justify-between items-center mb-8 relative z-20">
         <SectionTitle className="text-white mb-0">관련 사이트</SectionTitle>

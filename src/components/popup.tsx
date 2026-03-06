@@ -48,7 +48,7 @@ export default function Popup() {
       >
         <div className="relative w-full aspect-square">
           <Image
-            src="/main01.jpg"
+            src=""
             alt="팝업 이미지"
             fill
             className="object-cover"
