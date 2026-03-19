@@ -27,10 +27,10 @@ export const content = {
     footer: {
       logoAlt: "wyd did 대구 로고",
       address:
-        "대구광역시 중구 남산로4길 112 WYD 대구 교구대회 사무국",
-      email: "qna.wyd.doc.icn@gmail.com",
-      phone: "032-765-6997",
-      hours: "운영시간: 10:00 ~ 18:00",
+        "대구광역시 중구 남산로4길 112 본관 3층",
+      email: "2027wyd_daegu@naver.com",
+      phone: "053-250-3116~7",
+      hours: "운영시간: 월~금 09:00~18:00 (점심시간 12:00~13:00)",
       copyright: "Copyright ⓒ 대구대교구 All rights reserved",
     },
     slider: {
@@ -85,10 +85,10 @@ export const content = {
     footer: {
       logoAlt: "wyd did Daegu logo",
       address:
-        "112, Namsan-ro 4-gil, Jung-gu, Daegu, WYD Daegu Diocesan Committee",
-      email: "qna.wyd.doc.icn@gmail.com",
-      phone: "032-765-6997",
-      hours: "Hours: 10:00 ~ 18:00",
+        "112, Namsan-ro 4-gil, Jung-gu, Daegu, Main Building 3F",
+      email: "2027wyd_daegu@naver.com",
+      phone: "053-250-3116~7",
+      hours: "Hours: Mon-Fri 09:00~18:00 (Lunch 12:00~13:00)",
       copyright: "Copyright ⓒ Archdiocese of Daegu All rights reserved",
     },
     slider: {
