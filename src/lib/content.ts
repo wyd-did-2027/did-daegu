@@ -20,7 +20,7 @@ export const content = {
       ogLocale: "ko_KR",
     },
     header: {
-      logoAlt: "wyd did 대구 로고",
+      logoAlt: "wyd did 대구",
       nav: {
         home: "홈",
         calendar: "캘린더",
@@ -31,7 +31,7 @@ export const content = {
       },
     },
     footer: {
-      logoAlt: "wyd did 대구 로고",
+      logoAlt: "wyd did 대구",
       address:
         "대구광역시 중구 남산로4길 112 본관 3층",
       email: "2027wyd_daegu@naver.com",
@@ -78,7 +78,7 @@ export const content = {
       ogLocale: "en_US",
     },
     header: {
-      logoAlt: "wyd did Daegu logo",
+      logoAlt: "wyd did Daegu",
       nav: {
         home: "Home",
         calendar: "Calendar",
@@ -89,7 +89,7 @@ export const content = {
       },
     },
     footer: {
-      logoAlt: "wyd did Daegu logo",
+      logoAlt: "wyd did Daegu",
       address:
         "112, Namsan-ro 4-gil, Jung-gu, Daegu, Main Building 3F",
       email: "2027wyd_daegu@naver.com",
