@@ -6,7 +6,7 @@ export function isLocale(value: string): value is Locale {
 }
 
 export const siteConfig = {
-  name: "WYD SEOUL 2027 DID 대구",
+  name: "2027 WYD 대구대교구대회 공식 사이트",
   url: "https://www.wyd2027did-daegu.org",
   ogImage: "/logo.png",
 };
@@ -15,8 +15,10 @@ export const content = {
   kr: {
     lang: "ko",
     metadata: {
-      title: "WYD SEOUL 2027 DID 대구",
-      description: "WYD SEOUL 2027 DID 대구 공식 웹사이트",
+      title: "2027 WYD 대구대교구대회 공식 사이트",
+      description: "2027 WYD 대구대교구대회(DID) 일정, 공지, 관련 자료와 참가 정보를 확인하세요.",
+      keywords:
+        "2027 WYD 대구대교구대회, 대구대교구, WYD, DID, 교구대회, 일정, 공지사항, 관련 자료, 참가 신청, 홈스테이, 봉사자, 봉헌하기",
       ogLocale: "ko_KR",
     },
     header: {
@@ -73,8 +75,10 @@ export const content = {
   en: {
     lang: "en",
     metadata: {
-      title: "WYD SEOUL 2027 DID Daegu",
-      description: "WYD SEOUL 2027 DID Daegu Official Website",
+      title: "2027 WYD Daegu DID Official Site",
+      description: "2027 WYD Daegu DID schedules, notices, and info.",
+      keywords:
+        "2027 WYD Daegu DID, Daegu Diocese, WYD, DID, Diocesan Day, schedule, notices, resources, application, homestay, volunteer, offering",
       ogLocale: "en_US",
     },
     header: {
