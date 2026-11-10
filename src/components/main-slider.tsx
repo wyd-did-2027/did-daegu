@@ -149,6 +149,9 @@ export default function MainSlider({ locale = "kr" }: { locale?: Locale }) {
         <Panel>
           <SliderItem00 locale={locale} index={2} />
         </Panel>
+        <Panel>
+          <SliderItem00 locale={locale} index={3} ext="jpg" />
+        </Panel>
         {/* <Panel>
           <SliderItem03 />
         </Panel>
